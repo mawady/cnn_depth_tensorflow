@@ -37,7 +37,7 @@ def convert_nyu(path):
 
     random.shuffle(trains)
 
-    if not os.path.exists('train.csv'):  
+    if os.path.exists('train.csv'):  
         os.remove('train.csv')
 
     with open('train.csv', 'w') as output:
